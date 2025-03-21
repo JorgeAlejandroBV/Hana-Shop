@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Hana Shop</string>
+    <string name="title_text">Solicita tu pedido de:</string>
+    <string name="tazas">Tazas</string>
+    <string name="mousepad">Mousepad</string>
+    <string name="termos">Termos</string>
+    <string name="gorras">Gorras</string>
+    <string name="camisas">Camisas</string>
+    <string name="sudaderas">Sudaderas</string>
+    <string name="customize_product">Personaliza tu %1$s</string>
+    <string name="product_type">Tipo de %1$s</string>
+    <string name="image_url">Liga de la imagen</string>
+    <string name="phone_number">Número de celular</string>
+    <string name="estimated_price">Precio estimado</string>
+    <string name="price_value">$150</string>
+    <string name="send_request">Enviar solicitud</string>
+    <string name="request_sent">Solicitud enviada</string>
+</resources>
