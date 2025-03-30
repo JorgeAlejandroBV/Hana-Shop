@@ -31,16 +31,16 @@
             android:id="@+id/logoImage"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_marginTop="16dp"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
             android:src="@drawable/logo" />
 
         <TextView
             android:id="@+id/titleText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
             android:text="Personaliza tu Taza"
             android:textColor="@android:color/black"
             android:textSize="18sp"
@@ -49,8 +49,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
             android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
             android:text="Tipo de taza"
             android:textSize="16sp" />
 
@@ -58,15 +58,15 @@
             android:id="@+id/tipoTazaSpinner"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:layout_marginTop="10dp"
             android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="10dp"
             android:background="@android:drawable/btn_dropdown" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
             android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
             android:text="Tamaño de la imagen"
             android:textSize="16sp" />
 
@@ -75,15 +75,15 @@
             android:id="@+id/tamanoImagenSpinner"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:layout_marginTop="8dp"
             android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"
             android:background="@android:drawable/btn_dropdown" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
             android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
             android:text="Liga de la imagen"
             android:textSize="16sp" />
 
@@ -91,8 +91,8 @@
             android:id="@+id/ligaImagen"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:layout_marginTop="8dp"
             android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"
             android:hint="Inserte texto"
             android:paddingStart="12dp"
             android:paddingEnd="12dp" />
@@ -100,8 +100,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
             android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
             android:text="Número de celular"
             android:textSize="16sp" />
 
@@ -109,8 +109,8 @@
             android:id="@+id/celular"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:layout_marginTop="8dp"
             android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"
             android:hint="Inserte texto"
             android:inputType="phone"
             android:paddingStart="12dp"
@@ -120,30 +120,31 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="32dp"
             android:text="Precio estimado"
             android:textColor="#E91E63"
             android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_gravity="center_horizontal" />
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="8dp"
             android:text="$150"
             android:textColor="@android:color/black"
-            android:textSize="30sp"
-            android:layout_gravity="center_horizontal" />
+            android:textSize="30sp" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="56dp"
-            android:layout_marginTop="24dp"
             android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="24dp"
+            android:background="#2196F3"
             android:text="Enviar solicitud"
             android:textColor="#FFFFFF"
-            android:textSize="18sp"
-            android:background="#2196F3" />
+            android:id="@+id/btn_sendEmail"
+            android:textSize="18sp" />
     </LinearLayout>
 </ScrollView>
