@@ -15,4 +15,5 @@
     <string name="price_value">$150</string>
     <string name="send_request">Enviar solicitud</string>
     <string name="request_sent">Solicitud enviada</string>
+    <string name="host">http://127.0.0.1:8000/api/</string>
 </resources>
