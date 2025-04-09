@@ -11,11 +11,11 @@ public class RetrofitClient {
     public static Retrofit getClient() {
         if (retrofit == null) {
             OkHttpClient client = new OkHttpClient.Builder()
-                    .hostnameVerifier((hostname, session) -> hostname.equals("127.0.0.1") || hostname.equals("localhost"))
+                    .hostnameVerifier((hostname, session) -> true)
                     .build();
 
             retrofit = new Retrofit.Builder()
-                    .baseUrl("http://127.0.0.1:8000/")  // Cambia esta URL a la de tu servidor
+                    .baseUrl("http://192.168.1.64:8000/api/")  // Asegúrate de que esté bien configurado
                     .client(client)
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();

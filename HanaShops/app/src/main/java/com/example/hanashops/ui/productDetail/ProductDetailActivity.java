@@ -41,7 +41,7 @@ public class ProductDetailActivity extends AppCompatActivity {
         tipoCamisaSpinner = findViewById(R.id.tipoCamisaSpinner);
 
         repository = new Repository();
-        loadProductTypes(productType.toLowerCase());
+        loadProductTypes("5");
     }
 
     private int getLayoutForProductType(String productType) {

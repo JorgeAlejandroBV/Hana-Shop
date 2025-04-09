@@ -13,6 +13,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Consumer;
+import com.google.gson.Gson;
+
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -25,8 +27,8 @@ public class Repository {
         Retrofit retrofit = RetrofitClient.getClient();
         apiService = retrofit.create(ApiService.class);
     }
-
     public void getProductTypes(String category, Consumer<Map<Integer, String>> callback) {
+        Log.d("Repository", "Categoria solicitada: " + category);  // Log para verificar la categoría
         apiService.getProductTypes(category).enqueue(new Callback<ProductResponse>() {
             @Override
             public void onResponse(Call<ProductResponse> call, Response<ProductResponse> response) {
@@ -37,7 +39,7 @@ public class Repository {
                     }
                     callback.accept(productMap);
                 } else {
-                    Log.e("Repository", "Error en la respuesta del servidor");
+                    Log.e("Repository", "Error en la respuesta del servidor: " + response.code());
                 }
             }
 
@@ -47,4 +49,6 @@ public class Repository {
             }
         });
     }
+
+
 }
