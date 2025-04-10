@@ -16,4 +16,7 @@
     <string name="send_request">Enviar solicitud</string>
     <string name="request_sent">Solicitud enviada</string>
     <string name="host">http://192.168.1.6:8000/api/</string>
+    <string name="cap_color">Color de Gorra</string>
+    <string name="image_url_text">Liga de la imagen</string>
+    <string name="send_request_text">Enviar solicitud</string>
 </resources>

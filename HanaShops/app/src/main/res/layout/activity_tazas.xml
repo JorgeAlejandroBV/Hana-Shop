@@ -67,24 +67,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
-            android:text="Tamaño de la imagen"
-            android:textSize="16sp" />
-
-
-        <Spinner
-            android:id="@+id/tamanoImagenSpinner"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginHorizontal="16dp"
-            android:layout_marginTop="8dp"
-            android:background="@android:drawable/btn_dropdown" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="24dp"
-            android:text="Liga de la imagen"
+            android:text="@string/image_url_text"
             android:textSize="16sp" />
 
         <EditText
