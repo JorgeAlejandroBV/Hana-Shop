@@ -27,6 +27,10 @@ public class Product {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public String getDescription() {
         return description;
     }
@@ -34,4 +38,10 @@ public class Product {
     public String getPrice() {
         return price;
     }
+
+    @Override
+    public String toString() {
+        return name;  // Mostrar solo el nombre del producto en el Spinner
+    }
+
 }

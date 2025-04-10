@@ -15,7 +15,7 @@ public interface ApiService {
     Call<ProductResponse> getProductTypes(@Path("category") String category);
 
     @GET("variations/{product}")
-    Call<VariationResponse> getProductVariations(@Path("product") int productId);
+    Call<VariationResponse> getProductVariations(@Path("product") String productId);
 
     @POST("budget")
     Call<Void> enviarPresupuesto(@Body BudgetRequest request);

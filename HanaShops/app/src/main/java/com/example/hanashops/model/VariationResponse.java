@@ -5,7 +5,7 @@ import java.util.List;
 public class VariationResponse {
     private List<Variation> data;
 
-    public List<Variation> getData() {
+    public List<Variation> getVariations() {
         return data;
     }
 

@@ -15,6 +15,8 @@ public class emailSender {
     public static void sendBudget(Context context, BudgetRequest request) {
         ApiService apiService = RetrofitClient.getClient().create(ApiService.class);
 
+        Toast.makeText(context, "Enviando correo", Toast.LENGTH_SHORT).show();
+
         apiService.enviarPresupuesto(request).enqueue(new Callback<Void>() {
             @Override
             public void onResponse(Call<Void> call, Response<Void> response) {

@@ -36,7 +36,7 @@ public class Repository {
             public void onResponse(Call<ProductResponse> call, Response<ProductResponse> response) {
                 if (response.isSuccessful() && response.body() != null) {
                     Map<Integer, String> productMap = new HashMap<>();
-                    for (Product product : response.body().getData()) {
+                    for (Product product : response.body().getTypes()) {
                         productMap.put(product.getId(), product.getName());
                     }
                     callback.accept(productMap);
@@ -53,13 +53,13 @@ public class Repository {
     }
 
     // Obtener las variaciones de un producto
-    public void getVariations(int productId, Consumer<List<Variation>> callback) {
+    public void getVariations(String productId, Consumer<List<Variation>> callback) {
         Log.d("Repository", "Producto solicitado para variaciones: " + productId);
         apiService.getProductVariations(productId).enqueue(new Callback<VariationResponse>() {
             @Override
             public void onResponse(Call<VariationResponse> call, Response<VariationResponse> response) {
                 if (response.isSuccessful() && response.body() != null) {
-                    callback.accept(response.body().getData());
+                    callback.accept(response.body().getVariations());
                 } else {
                     Log.e("Repository", "Error en la respuesta del servidor: " + response.code());
                 }

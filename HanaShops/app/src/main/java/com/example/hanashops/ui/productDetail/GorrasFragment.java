@@ -59,7 +59,7 @@ public class GorrasFragment extends Fragment {
 
     private void setupViewModel() {
         viewModel = new ViewModelProvider(this).get(GorrasViewModel.class);
-        viewModel.loadVariations(8); // Puedes mover el ID a una constante si cambia por producto
+        viewModel.loadVariations("8"); // Puedes mover el ID a una constante si cambia por producto
     }
 
     private void setupObservers() {

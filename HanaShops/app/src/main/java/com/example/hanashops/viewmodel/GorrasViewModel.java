@@ -29,7 +29,7 @@ public class GorrasViewModel extends AndroidViewModel {
         return variations;
     }
 
-    public void loadVariations(int productId) {
+    public void loadVariations(String productId) {
         repository.getVariations(productId, variationsMap -> {
             variations.setValue(new ArrayList<>(variationsMap)); // Actualiza el LiveData con las variaciones
         });

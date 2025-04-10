@@ -1,23 +1,23 @@
 package com.example.hanashops.model;
 
 public class Variation {
-    private long id;
+    private String id;
     private String name;
     private String description;
 
     // Constructor, getters y setters
 
-    public Variation(long id, String name, String description) {
+    public Variation(String id, String name, String description) {
         this.id = id;
         this.name = name;
         this.description = description;
     }
 
-    public long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -36,4 +36,10 @@ public class Variation {
     public void setDescription(String description) {
         this.description = description;
     }
+
+    @Override
+    public String toString() {
+        return name; // Mostrar el nombre de la variación
+    }
+
 }
