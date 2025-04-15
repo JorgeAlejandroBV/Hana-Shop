@@ -10,6 +10,7 @@
         android:orientation="vertical"
         android:paddingBottom="24dp">
 
+        <!-- Header -->
         <RelativeLayout
             android:id="@+id/header"
             android:layout_width="match_parent"
@@ -27,6 +28,7 @@
                 android:textStyle="bold" />
         </RelativeLayout>
 
+        <!-- Logo -->
         <ImageView
             android:id="@+id/logoImage"
             android:layout_width="100dp"
@@ -35,17 +37,19 @@
             android:layout_gravity="center_horizontal"
             android:src="@drawable/logo" />
 
+        <!-- Título -->
         <TextView
-            android:id="@+id/titleText"
+            android:id="@+id/tituloSudadera"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_gravity="center_horizontal"
-            android:text="Personaliza tu Sudadera"
+            android:text="Personaliza tu sudadera"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
 
+        <!-- Tipo de sudadera -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -55,20 +59,37 @@
             android:textSize="16sp" />
 
         <Spinner
-            android:id="@+id/tipoTazaSpinner"
+            android:id="@+id/tipoSudaderaSpinner"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginTop="10dp"
             android:layout_marginHorizontal="16dp"
             android:background="@android:drawable/btn_dropdown" />
 
-
+        <!-- Variantes de sudadera -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:layout_marginStart="16dp"
-            android:text="@string/image_url_text"
+            android:text="Variantes de sudadera"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/variantesSudaderaSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@android:drawable/btn_dropdown" />
+
+        <!-- Imagen URL -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="16dp"
+            android:text="URL de la imagen"
             android:textSize="16sp" />
 
         <EditText
@@ -77,10 +98,11 @@
             android:layout_height="48dp"
             android:layout_marginTop="8dp"
             android:layout_marginHorizontal="16dp"
-            android:hint="Inserte texto"
+            android:hint="Inserte la URL de la imagen"
             android:paddingStart="12dp"
             android:paddingEnd="12dp" />
 
+        <!-- Celular -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -95,12 +117,12 @@
             android:layout_height="48dp"
             android:layout_marginTop="8dp"
             android:layout_marginHorizontal="16dp"
-            android:hint="Inserte texto"
+            android:hint="Inserte su número"
             android:inputType="phone"
             android:paddingStart="12dp"
             android:paddingEnd="12dp" />
 
-
+        <!-- Precio -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -117,11 +139,13 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="8dp"
-            android:text="$150"
+            android:text="S/ 0.00"
             android:textColor="@android:color/black"
             android:textSize="30sp" />
 
+        <!-- Botón de envío -->
         <Button
+            android:id="@+id/enviarSolicitud"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:layout_marginTop="24dp"

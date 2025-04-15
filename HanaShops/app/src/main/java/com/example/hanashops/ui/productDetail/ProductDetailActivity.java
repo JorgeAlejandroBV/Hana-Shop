@@ -51,6 +51,10 @@ public class ProductDetailActivity extends AppCompatActivity {
                 return new TazasFragment();
             case "Mousepad":
                 return new MousepadFragment();
+            case "Termos":
+                return new TermosFragment();
+            case "Sudaderas":
+                return new SudaderasFragment();
             default:
                 return null; // Si no hay tipo válido, devolvemos null
         }

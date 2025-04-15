@@ -10,6 +10,7 @@
         android:orientation="vertical"
         android:paddingBottom="24dp">
 
+        <!-- Header -->
         <RelativeLayout
             android:id="@+id/header"
             android:layout_width="match_parent"
@@ -27,6 +28,7 @@
                 android:textStyle="bold" />
         </RelativeLayout>
 
+        <!-- Logo -->
         <ImageView
             android:id="@+id/logoImage"
             android:layout_width="100dp"
@@ -35,23 +37,25 @@
             android:layout_gravity="center_horizontal"
             android:src="@drawable/logo" />
 
+        <!-- Título -->
         <TextView
-            android:id="@+id/titleText"
+            android:id="@+id/tituloTermo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_gravity="center_horizontal"
-            android:text="Personaliza tu Termo"
+            android:text="Personaliza tu termo"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
 
+        <!-- Tipo de termo -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:layout_marginStart="16dp"
-            android:text="Tipo de Termo"
+            android:text="Tipo de termo"
             android:textSize="16sp" />
 
         <Spinner
@@ -62,12 +66,13 @@
             android:layout_marginHorizontal="16dp"
             android:background="@android:drawable/btn_dropdown" />
 
+        <!-- Liga de imagen -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:layout_marginStart="16dp"
-            android:text="@string/image_url_text"
+            android:text="Liga de imagen"
             android:textSize="16sp" />
 
         <EditText
@@ -76,10 +81,12 @@
             android:layout_height="48dp"
             android:layout_marginTop="8dp"
             android:layout_marginHorizontal="16dp"
-            android:hint="Inserte texto"
+            android:hint="https://imgur.com/..."
+            android:inputType="textUri"
             android:paddingStart="12dp"
             android:paddingEnd="12dp" />
 
+        <!-- Celular -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -99,7 +106,7 @@
             android:paddingStart="12dp"
             android:paddingEnd="12dp" />
 
-
+        <!-- Precio -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -116,18 +123,20 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="8dp"
-            android:text="$150"
+            android:text="S/ 0.00"
             android:textColor="@android:color/black"
             android:textSize="30sp" />
 
+        <!-- Botón de envío -->
         <Button
+            android:id="@+id/enviarSolicitud"
             android:layout_width="match_parent"
             android:layout_height="56dp"
-            android:layout_marginHorizontal="32dp"
             android:layout_marginTop="24dp"
-            android:background="#2196F3"
+            android:layout_marginHorizontal="32dp"
             android:text="Enviar solicitud"
-            android:textColor="#212121"
-            android:textSize="18sp" />
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:background="#2196F3" />
     </LinearLayout>
 </ScrollView>
