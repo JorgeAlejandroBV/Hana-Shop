@@ -111,6 +111,7 @@
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/txtPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -120,14 +121,14 @@
             android:textSize="30sp" />
 
         <Button
+            android:id="@+id/enviarSolicitud"
             android:layout_width="match_parent"
             android:layout_height="56dp"
-            android:layout_marginHorizontal="32dp"
             android:layout_marginTop="24dp"
-            android:background="#2196F3"
-            android:text="Enviar solicitud"
+            android:layout_marginHorizontal="32dp"
+            android:text="@string/send_request_text"
             android:textColor="#FFFFFF"
-            android:id="@+id/btn_sendEmail"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:background="#2196F3" />
     </LinearLayout>
 </ScrollView>

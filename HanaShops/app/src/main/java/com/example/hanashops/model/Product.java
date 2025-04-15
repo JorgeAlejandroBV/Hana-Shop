@@ -36,7 +36,7 @@ public class Product {
     }
 
     public String getPrice() {
-        return price;
+        return "$" + price;
     }
 
     @Override

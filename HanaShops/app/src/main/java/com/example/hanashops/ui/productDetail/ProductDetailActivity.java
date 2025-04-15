@@ -1,6 +1,7 @@
 package com.example.hanashops.ui.productDetail;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,6 +23,7 @@ public class ProductDetailActivity extends AppCompatActivity {
             return;
         }
 
+        Log.d("info", productType);
         Fragment fragment = getFragmentForProductType(productType);
         if (fragment == null) {
             Toast.makeText(this, "Producto no válido", Toast.LENGTH_SHORT).show();
@@ -45,6 +47,10 @@ public class ProductDetailActivity extends AppCompatActivity {
                 return new CamisasFragment();  // Usamos un fragmento específico para Camisas
             case "Gorras":
                 return new GorrasFragment();   // Un fragmento específico para Gorras
+            case "Tazas":
+                return new TazasFragment();
+            case "Mousepad":
+                return new MousepadFragment();
             default:
                 return null; // Si no hay tipo válido, devolvemos null
         }

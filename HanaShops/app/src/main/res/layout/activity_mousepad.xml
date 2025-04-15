@@ -51,11 +51,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:layout_marginStart="16dp"
-            android:text="Tipo de Mousepad"
+            android:text="Modelo de Mousepad"
             android:textSize="16sp" />
 
         <Spinner
-            android:id="@+id/tipoTazaSpinner"
+            android:id="@+id/mousepadSpinner"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginTop="10dp"
@@ -70,7 +70,6 @@
             android:text="@string/image_url_text"
             android:textSize="16sp" />
 
-        <!-- Corregido: Touch target size -->
         <EditText
             android:id="@+id/ligaImagen"
             android:layout_width="match_parent"
@@ -100,7 +99,6 @@
             android:paddingStart="12dp"
             android:paddingEnd="12dp" />
 
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -112,15 +110,17 @@
             android:layout_gravity="center_horizontal" />
 
         <TextView
+            android:id="@+id/txtPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="8dp"
             android:text="$150"
             android:textColor="@android:color/black"
-            android:textSize="30sp"
-            android:layout_gravity="center_horizontal" />
+            android:textSize="30sp" />
 
         <Button
+            android:id="@+id/enviarSolicitud"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:layout_marginTop="24dp"
